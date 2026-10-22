@@ -14,7 +14,6 @@ function App() {
     <div className="app-container">
       {!showProductList ? (
         <div className="landing-page">
-          <div className="background-image"></div>
           <div className="landing-content">
             <h1 className="landing-title">Welcome To Paradise Nursery</h1>
             <div className="divider"></div>

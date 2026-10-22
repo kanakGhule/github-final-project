@@ -11,8 +11,12 @@ body {
 }
 
 .landing-page {
-  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=1500&q=80');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 100vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,20 +24,14 @@ body {
   padding: 40px 20px;
 }
 
-.background-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url('https://cdn.pixabay.com/photo/2016/11/29/03/53/houseplants-1867187_1280.jpg') no-repeat center center/cover;
-  z-index: -1;
-}
-
 .landing-content {
+  background: rgba(0, 0, 0, 0.45);
+  padding: 40px 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
   color: white;
   max-width: 900px;
+  width: 100%;
 }
 
 .landing-title {
@@ -77,5 +75,6 @@ body {
 }
 
 .landing-about .about-us-container {
-  background-color: rgba(255, 255, 255, 0.92);
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #333;
 }
