@@ -4,7 +4,7 @@ Paradise Nursery is an e-commerce React application designed for plant lovers. I
 
 ## Features
 
-- **Landing Page:** Welcoming introduction with an overview of Paradise Nursery and a "Get Started" button.
+- **Landing Page:** Welcoming introduction with an overview of Paradise Nursery, company mission, and a "Get Started" button.
 - **Product Listing:** Organized houseplants into multiple categories (e.g., Air Purifying, Aromatic, Medicinal) with detailed cards showing images, descriptions, and prices.
 - **Dynamic Cart Management:**
   - Add items to the cart (disables the button once added).
@@ -14,14 +14,45 @@ Paradise Nursery is an e-commerce React application designed for plant lovers. I
   - Increment, decrement, or remove items seamlessly.
   - "Continue Shopping" navigation and checkout placeholder.
 
-## Tech Stack
+## Tech Stack / Tools
 
 - **Frontend:** React.js, HTML5, CSS3
-- **State Management:** Redux Toolkit
-- **Icons & Styling:** FontAwesome / Custom CSS
+- **State Management:** Redux Toolkit (`@reduxjs/toolkit`, `react-redux`)
+- **Build / Tooling:** npm, Node.js
 
-## How to Run Locally
+## Setup Instructions
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/](https://github.com/)<your-username>/<your-repo-name>.git
+   git clone https://github.com/kanakGhule/github-final-project.git
+   ```
+
+2. Navigate into the project directory:
+   ```bash
+   cd github-final-project
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+
+## Folder Structure
+
+```text
+src/
+├── components/
+│   ├── AboutUs.jsx
+│   ├── ProductList.jsx
+│   └── CartItem.jsx
+├── redux/
+│   └── CartSlice.jsx
+├── App.jsx
+├── App.css
+└── index.js
+```

@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  color: #333;
+}
+
+.landing-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url('https://cdn.pixabay.com/photo/2016/11/29/03/53/houseplants-1867187_1280.jpg') no-repeat center center/cover;
+  z-index: -1;
+}
+
+.landing-content {
+  color: white;
+  max-width: 900px;
+}
+
+.landing-title {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.divider {
+  width: 100px;
+  height: 4px;
+  background-color: #4caf50;
+  margin: 15px auto;
+  border-radius: 2px;
+}
+
+.landing-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+.get-started-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.get-started-button:hover {
+  background-color: #388e3c;
+}
+
+.landing-about {
+  margin-top: 20px;
+}
+
+.landing-about .about-us-container {
+  background-color: rgba(255, 255, 255, 0.92);
+}
