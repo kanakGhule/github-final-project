@@ -18,13 +18,14 @@ body {
   min-height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 40px 20px;
 }
 
-.landing-content {
+.content {
   background: rgba(0, 0, 0, 0.45);
   padding: 40px 30px;
   border-radius: 12px;
@@ -32,9 +33,10 @@ body {
   color: white;
   max-width: 900px;
   width: 100%;
+  margin-bottom: 25px;
 }
 
-.landing-title {
+.content h1 {
   font-size: 3rem;
   font-weight: bold;
   letter-spacing: 1px;
@@ -48,7 +50,7 @@ body {
   border-radius: 2px;
 }
 
-.landing-subtitle {
+.content p {
   font-size: 1.5rem;
   margin-bottom: 25px;
   font-style: italic;
@@ -63,18 +65,18 @@ body {
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-bottom: 30px;
 }
 
 .get-started-button:hover {
   background-color: #388e3c;
 }
 
-.landing-about {
-  margin-top: 20px;
+.aboutus_container {
+  width: 100%;
+  max-width: 900px;
 }
 
-.landing-about .about-us-container {
+.aboutus_container .about-us-container {
   background-color: rgba(255, 255, 255, 0.95);
   color: #333;
 }

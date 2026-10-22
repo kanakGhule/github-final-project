@@ -6,7 +6,7 @@ import './App.css';
 function App() {
   const [showProductList, setShowProductList] = useState(false);
 
-  const handleGetStarted = () => {
+  const handleGetStartedClick = () => {
     setShowProductList(true);
   };
 
@@ -14,22 +14,21 @@ function App() {
     <div className="app-container">
       {!showProductList ? (
         <div className="landing-page">
-          <div className="landing-content">
-            <h1 className="landing-title">Welcome To Paradise Nursery</h1>
+          <div className="background-image"></div>
+          <div className="content">
+            <h1>Welcome To Paradise Nursery</h1>
             <div className="divider"></div>
-            <p className="landing-subtitle">Where Green Meets Serenity</p>
-            <button className="get-started-button" onClick={handleGetStarted}>
+            <p>Where Green Meets Serenity</p>
+            <button className="get-started-button" onClick={handleGetStartedClick}>
               Get Started
             </button>
-            <div className="landing-about">
-              <AboutUs />
-            </div>
+          </div>
+          <div className="aboutus_container">
+            <AboutUs />
           </div>
         </div>
       ) : (
-        <div className="product-list-container">
-          <ProductList />
-        </div>
+        <ProductList />
       )}
     </div>
   );
